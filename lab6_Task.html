@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container col-sm-6 border border-primary-subtle">
+        <h3 class="mb-3">
+            Внесення даних про освітню компоненту ОПП до ІС "Каталог освітніх компонент"
+        </h3>
+        <form id="myForm" novalidate>
+            <div class="mb-3">
+                <label for="" class="form-label fw-bold">
+                Освітня програма
+                </label>
+                <select class="form-select" required aria-label="select example">
+                    <option selected disabled value="">Оберіть освітню програму...</option>
+                    <option value="1">Економіка підприємства</option>
+                    <option value="2">Облік і аудит</option>
+                    <option value="3">Менеджмент</option>
+                    <option value="4">Екологія</option>
+                    <option value="5">Комп'ютерні науки</option>
+                    <option value="6">Електроенергетика, електротехніка та електромеханіка</option>
+                    <option value="7">Агрономія</option>
+                    <option value="8">Лісове господарство</option>
+                </select>
+                <div class="invalid-feedback">
+                    Буль ласка, оберіть освітню програму
+                </div>
+                <div class="valid-feedback">
+                    Чудово!
+                </div>
+                    <label for="" class="form-label fw-bold">
+                        Освітній ступінь
+                    </label>
+                    <div class="form-switch form-check">
+                        <input class="form-check-input" type="radio" role="switch" id="Switch1" name="Switch-stacked" required>
+                        <label for="Switch1" class="form-check-label">
+                            Бакалавр
+                        </label>
+                    </div>
+                    <div class="form-switch form-check">
+                        <input class="form-check-input" type="radio" role="switch" id="Switch2" name="Switch-stacked" required>
+                        <label for="Switch2" class="form-check-label">
+                            Магістр
+                        </label>
+                        <div class="invalid-feedback">
+                        Оберіть освітній ступінь
+                        </div>
+                        <div class="valid-feedback">
+                        Чудово!
+                        </div>
+                    </div>
+                <label for="" class="fw-bold mb-2">
+                    Термін навчання
+                </label>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="FormCheck2" name="radio-stacked" required>
+                        <label class="form-check-label" for="FormCheck2">
+                            Скорочений
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input type="radio" class="form-check-input" id="FormCheck3" name="radio-stacked" required>
+                        <label class="form-check-label" for="FormCheck3">
+                            Повний
+                        </label>
+                        <div class="invalid-feedback">
+                            Оберіть термін навчання
+                        </div>
+                        <div class="valid-feedback">
+                            Чудово!
+                        </div>
+                    </div>
+                
+                <label for="" class="fw-bold fst-italic mb-3">
+                    Вид ОК
+                </label>
+                    <div class="form-check mb-2">
+                        <input type="radio" class="form-check-input" name="FormRadio" id="FormRadio1" required>
+                        <label for="FormRadio1">
+                            Обов'язкова компонента (ОК)
+                        </label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input type="radio" class="form-check-input" name="FormRadio" id="FormRadio2" required>
+                        <label for="FormRadio2">
+                            Обов'язкова компонента за вибором інституту (ОКІ)
+                        </label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input type="radio" class="form-check-input" name="FormRadio" id="FormRadio3" required>
+                        <label for="FormRadio3">
+                            Вибіркова фахова компонента (ВК)
+                        </label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input type="radio" class="form-check-input" name="FormRadio" id="FormRadio4" required>
+                        <label for="FormRadio4">
+                            Вибіркова компонента за уподобання здобувача (ВКУ)
+                        </label>
+                        <div class="invalid-feedback">
+                            Оберіть вид ОК
+                        </div>
+                        <div class="valid-feedback">
+                            Чудово!
+                        </div>   
+                    </div>
+                 <label for="" class=" mb-2 fw-bold fst-italic">
+                        Тип документа ОК
+                </label>
+                <div class="mb-3">
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="RadioInline" id="RadioInline1" required>
+                        <label for="RadioInline1">
+                            Анотація
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="RadioInline" id="RadioInline2" required>
+                        <label for="RadioInline2">
+                            Силабус
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="RadioInline" id="RadioInline3" required>
+                        <label for="RadioInline3">
+                            Робоча програма
+                        </label>
+                    <div class="invalid-feedback">
+                        Оберіть тип документа ОК
+                    </div>
+                    <div class="valid-feedback">
+                        Чудово!
+                    </div>    
+                    </div> 
+                </div>
+                <div class="d-flex">
+                    <div class="mb-3 ">
+                        <label for="NumberOK" class="form-label">
+                        Номер ОК за ОПП
+                        </label>
+                        <input type="text" class="form-control" name="NumberOK" id="NumberOK1" placeholder="01..09 або 10, 11 і.д." required>
+                        <div class="invalid-feedback">
+                            Введіть номер ОК
+                        </div>
+                        <div class="valid-feedback">
+                            Чудово!
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">                   
+                    <div class="mb-3">
+                        <label for="NameOK" class="form-label">
+                            Назва ОК у відповідальності до ОПП
+                        </label>
+                        <input type="text" class="form-control" name="NameOK" id="NameOK1" placeholder="Назва ОК..." required>
+                        <div class="invalid-feedback">
+                            Введіть назву ОК
+                        </div>
+                        <div class="valid-feedback">
+                            Чудово!
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="row mb-4">
+                        <label for="DatePick" class="col-form-label">
+                            Дата затвердження документа
+                        </label>    
+                        <div class="col-sm-8">
+                            <input id="DatePick" class="form-control" type="date" required>
+                            <div class="invalid-feedback">
+                                Оберіть дату затвердження документа
+                            </div>
+                            <div class="valid-feedback">
+                                Чудово!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="" class="form-label">
+                        Семестр вивчення ОК
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" name="Checkbox"  required>
+                        <label for="">
+                            1 сем.
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" name="Checkbox" required>
+                        <label for="">
+                            2 сем.
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" name="Checkbox" required>
+                        <label for="">
+                            3 сем.
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" name="Checkbox" required>
+                        <label for="">
+                            4 сем.
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" name="Checkbox" required>
+                        <label for="">
+                            5 сем.
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" name="Checkbox" required>
+                        <label for="">
+                            6 сем.
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" name="Checkbox" required>
+                        <label for="">
+                            7 сем.
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" name="Checkbox" required>
+                        <label for="">
+                            8 сем.
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="m-1 btn btn-primary">Submit</button>
+                <button type="reset" class="m-1 btn btn-primary">Clear</button>
+            </div>
+    </div>
+
+
+</body>
+<script>
+    document.getElementById("myForm") .addEventListener("submit",
+    function(event) {
+    event.preventDefault();
+    if (this.checkValidity() === false) {
+        event.stopPropagation();
+    }
+    this.classList.add("was-validated");}, false);
+    </script>
+</html>

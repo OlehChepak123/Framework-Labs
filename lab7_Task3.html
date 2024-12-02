@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container col-md-8 mt-4">
+        <form id="myForm" novalidate class="g-3">
+            <div class="row border border-secondary-subtle py-2 mb-5">
+                <div class="col-auto">
+                    <label for="SProgram1" class="col-form-label fst-italic">
+                        Освітня програма
+                    </label>
+                </div>
+                <div class="col-auto">
+                    <select class="form-select" required id="SProgram1">
+                        <option selected disabled value="">---Оберіть освітню програму---</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                    </select>
+                </div>  
+            </div>
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="border border-secondary-subtle py-2 mb-5">
+                        <label for="" class="form-label fst-italic ms-3">
+                            Освітній ступінь
+                        </label>
+                        <div class="row ms-3">
+                            <div class=" col-auto form-check-inline">
+                                <input type="radio" class="form-check-input" name="Grades" id="Grade1" value="option1" required>
+                                <label for="Grade1">
+                                    Бакалавр
+                                </label>
+                            </div>
+                            <div class=" col-auto form-check-inline">
+                                <input type="radio" class="form-check-input" name="Grades" id="Grade2" value="option1=2" required>
+                                <label for="Grade1">
+                                    Магістр
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="border border-secondary-subtle py-2">
+                        <label for="" class="form-label fst-italic ms-3">
+                            Термін навчання
+                        </label>
+                        <div class="row ms-3">
+                            <div class=" col-auto form-check-inline">
+                                <input type="radio" class="form-check-input" name="Terms" id="Term1" value="option1" required>
+                                <label for="Grade1">
+                                    Скорочений
+                                </label>
+                            </div>
+                            <div class=" col-auto form-check-inline">
+                                <input type="radio" class="form-check-input" name="Terms" id="Term2" value="option2" required>
+                                <label for="Grade2">
+                                    Повний
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="border border-secondary-subtle py-2 mb-3">
+                        <label for="" class="form-label fst-italic ms-3 mb-4">
+                            Вид ОК
+                        </label>
+                        <div class="ms-3">
+                            <div class=" form-check mb-2">
+                                <input type="radio" class="form-check-input" name="Types" id="Type1" value="option1" required>
+                                <label for="Type1">
+                                    Обов'язкова компонента (ОК)
+                                </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="radio" class="form-check-input" name="Types" id="Type2" value="option2" required>
+                                <label for="Type2">
+                                    Обов'язкова компонента за вибором інституту (ОКІ)
+                                </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="radio" class="form-check-input" name="Types" id="Type3" value="option3" required>
+                                <label for="Type3">
+                                    Вибіркова фахова компонента (ВК)
+                                </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="radio" class="form-check-input" name="Types" id="Type4" value="option4" required>
+                                <label for="Type4">
+                                    Вибіркова компонента за уподобання здобувача (ВКУ)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="border border-secondary-subtle py-2">
+                        <label for="" class="form-label fst-italic ms-3">
+                            Номер ОК за ОПП
+                        </label>
+                        <div class="row ms-3 mb-2">
+                            <div class="col-auto">
+                                <label for="NumberOK1" class="ms-4 form-label">
+                                    Введіть номер
+                                </label>
+                                <input type="text" class="form-control" name="NumberOK" id="NumberOK1" placeholder="01..09 або 10, 11 і.д." required>
+                            </div>
+                            <div class=" col-auto">
+                                <label for="NumberBlock1" class="form-label">
+                                    Номер блоку (інакше 0)
+                                </label>
+                                <input type="text" class="form-control" name="NumberOK" id="NumberOK1" placeholder="0" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 mb-2 border border-secondary-subtle mb-5">
+                <div class="ms-2">
+                    <label for="NameOK" class="form-label fst-italic ps-4">
+                        Назва ОК у відповідальності до ОПП
+                    </label>
+                    <input type="text" class="form-control" name="NameOK" id="NameOK1" placeholder="Назва ОК..." required>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-md-6 ">
+                    <div class="border border-secondary-subtle p-2">
+                        <label for="" class="form-label fst-italic ms-3">
+                            Тип документа ОК
+                        </label>
+                        <div class="row ms-3 mb-3">
+                            <div class=" col-auto form-check-inline">
+                                <input type="radio" class="form-check-input" name="DocTypes" id="Doc1" value="option1" required>
+                                <label for="Doc1">
+                                    Анотація
+                                </label>
+                            </div>
+                            <div class=" col-auto form-check-inline">
+                                <input type="radio" class="form-check-input" name="DocTypes" id="Doc2" value="option2" required>
+                                <label for="Doc2">
+                                    Силабус
+                                </label>
+                            </div>
+                            <div class=" col-auto form-check-inline">
+                                <input type="radio" class="form-check-input" name="DocTypes" id="Doc3" value="option3" required>
+                                <label for="Doc3">
+                                    Робоча програма
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="border border-secondary-subtle py-2">
+                        <div class="ms-3">
+                            <label for="DatePick" class="col-form-label ms-2">
+                                Дата затвердження документа
+                            </label>
+                            <div class=" col-sm-6 form-check-inline">    
+                                <input id="DatePick" class="form-control" type="date" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" mt-4 border border-secondary-subtle">
+                <div class="ms-4 fst-italic">
+                    <label> Семестр вивчення ОК</label>
+                </div>
+                <div class="p-3">
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" name="Checkbox" required>
+                        <label for="">
+                            1 сем.
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" name="Checkbox" required>
+                        <label for="">
+                            2 сем.
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" name="Checkbox" required>
+                        <label for="">
+                            3 сем.
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" name="Checkbox" required>
+                        <label for="">
+                            4 сем.
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" name="Checkbox" required>
+                        <label for="">
+                            5 сем.
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" name="Checkbox" required>
+                        <label for="">
+                            6 сем.
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" name="Checkbox" required>
+                        <label for="">
+                            7 сем.
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" name="Checkbox" required>
+                        <label for="">
+                            8 сем.
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="m-1 btn btn-primary">Submit</button>
+            <button type="reset" class="m-1 btn btn-primary">Clear</button>
+        </form>
+    </div>
+</body>
+<script>
+    document.getElementById("myForm") .addEventListener("submit",
+    function(event) {
+    event.preventDefault();
+    if (this.checkValidity() === false) {
+        event.stopPropagation();
+    }
+    this.classList.add("was-validated");}, false);
+    </script>
+</html>
